@@ -113,9 +113,7 @@
    ;; window-divider
    `(window-divider             ((t (:foreground ,dark))))
    `(window-divider-first-pixel ((t (:foreground ,dark))))
-   `(window-divider-last-pixel  ((t (:foreground ,dark))))
-
-  ))
+   `(window-divider-last-pixel  ((t (:foreground ,dark))))))
 
 ;;;###autoload
 (when load-file-name
