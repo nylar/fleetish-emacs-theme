@@ -19,16 +19,18 @@
 (deftheme fleetish
   "A take on the JetBrains Fleet theme sprinkled with some creative freedom.")
 
-(let ((darkest       "#0F0F0F")
-      (darker        "#222222")
+(let ((darkest       "#181818")
+      (darker        "#292929")
       (dark          "#383838")
       (select        "#102F5B")
-      (light         "#F0F0F0")
+      (light         "#EFEFEF")
       (lightest      "#FFFFFF")
-      (dark-gray     "#5B5B5B")
-      (light-gray    "#757575")
+      (darker-gray   "#5D5D5D")
+      (dark-gray     "#898989")
+      (light-gray    "#D1D1D1")
       (purple        "#AC9CF9")
-      (blue          "#52A7F6")
+      (blue          "#94C1FA")
+      (pale-blue     "#B4D0DC")
       (pink          "#D898D8")
       (green         "#AFCB85")
       (cyan          "#78D0BD")
@@ -53,7 +55,7 @@
    `(vertical-border   ((t (:foreground ,dark))))
    `(minibuffer-prompt ((t (:foreground ,orange))))
 
-   `(line-number              ((t (:foreground ,dark-gray))))
+   `(line-number              ((t (:foreground ,darker-gray))))
    `(line-number-current-line ((t (:foreground ,light-gray :background ,darker))))
 
    `(hl-line      ((t (:background ,darker))))
@@ -69,9 +71,24 @@
    `(font-lock-keyword-face           ((t (:foreground ,cyan))))
    `(font-lock-preprocessor-face      ((t (:foreground ,green))))
    `(font-lock-string-face            ((t (:foreground ,pink))))
-   `(font-lock-type-face              ((t (:foreground ,orange))))
+   `(font-lock-type-face              ((t (:foreground ,blue))))
    `(font-lock-variable-name-face     ((t (:foreground ,light))))
    `(font-lock-warning-face           ((t (:foreground ,orange-accent))))
+
+   ;; tree-sitter
+   `(tree-sitter-hl-face:property ((t (:foreground ,purple))))
+   `(tree-sitter-hl-face:property.definition ((t (:foreground ,purple))))
+   `(tree-sitter-hl-face:function ((t (:foreground ,light :weight semi-bold))))
+   `(tree-sitter-hl-face:function.call ((t (:foreground ,yellow :slant normal))))
+   `(tree-sitter-hl-face:constant ((t (:foreground ,purple))))
+   `(tree-sitter-hl-face:constant.builtin ((t (:foreground ,yellow))))
+   `(tree-sitter-hl-face:type.builtin ((t (:foreground ,blue))))
+   `(tree-sitter-hl-face:type.parameter ((t (:foreground ,pale-blue))))
+   `(tree-sitter-hl-face:type.argument ((t (:foreground ,pale-blue))))
+   `(tree-sitter-hl-face:constructor ((t (:foreground ,blue))))
+   `(tree-sitter-hl-face:keyword ((t (:foreground ,cyan))))
+   `(tree-sitter-hl-face:number ((t (:foreground ,yellow))))
+   `(tree-sitter-hl-face:operator ((t (:foreground ,light))))
 
    ;; mode-line
    `(mode-line           ((t (:inverse-video unspecified :foreground ,light :background ,darker :box unspecified))))
@@ -93,11 +110,17 @@
 
    ;; ivy
    `(ivy-current-match ((t (:foreground ,light :background ,purple-accent))))
-   `(ivy-current-match ((t (:foreground ,light :background ,purple-accent))))
+   `(ivy-minibuffer-match-face-1 ((t (:foreground ,darkest :background ,pink))))
+   `(ivy-minibuffer-match-face-2 ((t (:foreground ,darkest :background ,blue))))
+   `(ivy-minibuffer-match-face-3 ((t (:foreground ,darkest :background ,cyan))))
+   `(ivy-minibuffer-match-face-4 ((t (:foreground ,darkest :background ,green))))
 
    ;; lsp
    `(lsp-ui-doc-background      ((t (:foreground ,light :background ,dark))))
    `(lsp-face-highlight-textual ((t (:background ,select))))
+
+   ;; rustic
+   `(rust-string-interpolation ((t (:foreground ,cyan))))
 
    ;; term
    `(term               ((t (:foreground ,light :background ,darkest))))
