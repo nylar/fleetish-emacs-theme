@@ -76,19 +76,19 @@
    `(font-lock-warning-face           ((t (:foreground ,orange-accent))))
 
    ;; tree-sitter
-   `(tree-sitter-hl-face:property ((t (:foreground ,purple))))
+   `(tree-sitter-hl-face:constant            ((t (:foreground ,purple))))
+   `(tree-sitter-hl-face:constant.builtin    ((t (:foreground ,yellow))))
+   `(tree-sitter-hl-face:constructor         ((t (:foreground ,blue))))
+   `(tree-sitter-hl-face:function            ((t (:foreground ,light :weight semi-bold))))
+   `(tree-sitter-hl-face:function.call       ((t (:foreground ,yellow :slant normal))))
+   `(tree-sitter-hl-face:keyword             ((t (:foreground ,cyan))))
+   `(tree-sitter-hl-face:number              ((t (:foreground ,yellow))))
+   `(tree-sitter-hl-face:operator            ((t (:foreground ,light))))
+   `(tree-sitter-hl-face:property            ((t (:foreground ,purple))))
    `(tree-sitter-hl-face:property.definition ((t (:foreground ,purple))))
-   `(tree-sitter-hl-face:function ((t (:foreground ,light :weight semi-bold))))
-   `(tree-sitter-hl-face:function.call ((t (:foreground ,yellow :slant normal))))
-   `(tree-sitter-hl-face:constant ((t (:foreground ,purple))))
-   `(tree-sitter-hl-face:constant.builtin ((t (:foreground ,yellow))))
-   `(tree-sitter-hl-face:type.builtin ((t (:foreground ,blue))))
-   `(tree-sitter-hl-face:type.parameter ((t (:foreground ,pale-blue))))
-   `(tree-sitter-hl-face:type.argument ((t (:foreground ,pale-blue))))
-   `(tree-sitter-hl-face:constructor ((t (:foreground ,blue))))
-   `(tree-sitter-hl-face:keyword ((t (:foreground ,cyan))))
-   `(tree-sitter-hl-face:number ((t (:foreground ,yellow))))
-   `(tree-sitter-hl-face:operator ((t (:foreground ,light))))
+   `(tree-sitter-hl-face:type.argument       ((t (:foreground ,pale-blue))))
+   `(tree-sitter-hl-face:type.builtin        ((t (:foreground ,blue))))
+   `(tree-sitter-hl-face:type.parameter      ((t (:foreground ,pale-blue))))
 
    ;; mode-line
    `(mode-line           ((t (:inverse-video unspecified :foreground ,light :background ,darker :box unspecified))))
@@ -109,7 +109,7 @@
    `(flycheck-fringe-error   ((t (:foreground ,red-accent))))
 
    ;; ivy
-   `(ivy-current-match ((t (:foreground ,light :background ,purple-accent))))
+   `(ivy-current-match           ((t (:foreground ,light :background ,purple-accent))))
    `(ivy-minibuffer-match-face-1 ((t (:foreground ,darkest :background ,pink))))
    `(ivy-minibuffer-match-face-2 ((t (:foreground ,darkest :background ,blue))))
    `(ivy-minibuffer-match-face-3 ((t (:foreground ,darkest :background ,cyan))))
