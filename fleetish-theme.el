@@ -19,10 +19,9 @@
 (deftheme fleetish
   "A take on the JetBrains Fleet theme sprinkled with some creative freedom.")
 
-(let ((darkest       "#181818")
-      (darker        "#292929")
-      (dark          "#383838")
-      (select        "#102F5B")
+(let ((darkest       "#0D0D0D")
+      (darker        "#1C1C1C")
+      (dark          "#353535")
       (light         "#EFEFEF")
       (lightest      "#FFFFFF")
       (darker-gray   "#5D5D5D")
@@ -30,7 +29,7 @@
       (light-gray    "#D1D1D1")
       (purple        "#AC9CF9")
       (blue          "#94C1FA")
-      (pale-blue     "#B4D0DC")
+      (dark-blue     "#163764")
       (pink          "#D898D8")
       (green         "#AFCB85")
       (cyan          "#78D0BD")
@@ -46,7 +45,7 @@
    'fleetish
 
    `(default           ((t (:foreground ,light :background ,darkest :weight normal))))
-   `(region            ((t (:foreground unspecified :background ,select))))
+   `(region            ((t (:foreground unspecified :background ,dark-blue))))
    `(warning           ((t (:foreground ,yellow-accent))))
    `(error             ((t (:foreground ,red-accent))))
    `(success           ((t (:foreground ,green-accent))))
@@ -86,9 +85,9 @@
    `(tree-sitter-hl-face:operator            ((t (:foreground ,light))))
    `(tree-sitter-hl-face:property            ((t (:foreground ,purple))))
    `(tree-sitter-hl-face:property.definition ((t (:foreground ,purple))))
-   `(tree-sitter-hl-face:type.argument       ((t (:foreground ,pale-blue))))
+   `(tree-sitter-hl-face:type.argument       ((t (:foreground ,blue))))
    `(tree-sitter-hl-face:type.builtin        ((t (:foreground ,blue))))
-   `(tree-sitter-hl-face:type.parameter      ((t (:foreground ,pale-blue))))
+   `(tree-sitter-hl-face:type.parameter      ((t (:foreground ,blue))))
 
    ;; mode-line
    `(mode-line           ((t (:inverse-video unspecified :foreground ,light :background ,darker :box unspecified))))
@@ -109,15 +108,15 @@
    `(flycheck-fringe-error   ((t (:foreground ,red-accent))))
 
    ;; ivy
-   `(ivy-current-match           ((t (:foreground ,light :background ,purple-accent))))
-   `(ivy-minibuffer-match-face-1 ((t (:foreground ,darkest :background ,pink))))
-   `(ivy-minibuffer-match-face-2 ((t (:foreground ,darkest :background ,blue))))
-   `(ivy-minibuffer-match-face-3 ((t (:foreground ,darkest :background ,cyan))))
-   `(ivy-minibuffer-match-face-4 ((t (:foreground ,darkest :background ,green))))
+   `(ivy-current-match           ((t (:foreground ,light :background ,dark-blue))))
+   `(ivy-minibuffer-match-face-1 ((t (:foreground ,pink))))
+   `(ivy-minibuffer-match-face-2 ((t (:foreground ,blue))))
+   `(ivy-minibuffer-match-face-3 ((t (:foreground ,cyan))))
+   `(ivy-minibuffer-match-face-4 ((t (:foreground ,green))))
 
    ;; lsp
-   `(lsp-ui-doc-background      ((t (:foreground ,light :background ,dark))))
-   `(lsp-face-highlight-textual ((t (:background ,select))))
+   `(lsp-ui-doc-background      ((t (:foreground ,light :background ,darker))))
+   `(lsp-face-highlight-textual ((t (:background ,dark-blue))))
 
    ;; rustic
    `(rust-string-interpolation ((t (:foreground ,cyan))))
