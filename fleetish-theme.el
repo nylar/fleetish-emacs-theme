@@ -35,7 +35,6 @@
       (cyan          "#78D0BD")
       (orange        "#ECA775")
       (yellow        "#E5C995")
-      (purple-accent "#6363EE")
       (green-accent  "#00AF99")
       (orange-accent "#EE7F25")
       (yellow-accent "#DEA407")
