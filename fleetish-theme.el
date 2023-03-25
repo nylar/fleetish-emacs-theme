@@ -53,6 +53,7 @@
    `(link              ((t (:underline t :foreground ,cyan))))
    `(vertical-border   ((t (:foreground ,dark))))
    `(minibuffer-prompt ((t (:foreground ,orange))))
+   `(highlight         ((t (:background ,dark-blue))))
 
    `(line-number              ((t (:foreground ,darker-gray))))
    `(line-number-current-line ((t (:foreground ,light-gray :background ,darker))))
