@@ -4,7 +4,7 @@
 ;; Version: 0.1
 ;; Filename: fleetish-theme.el
 ;; Package-Requires: ((emacs "24"))
-;; URL: https://github.com/nylar/fleetish-emacs-theme.el
+;; URL: https://github.com/nylar/fleetish-emacs-theme
 ;; SPDX-License-Identifier: MIT
 
 ;;; Commentary:
